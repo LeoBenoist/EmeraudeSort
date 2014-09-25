@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emeraude Sort Demo</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<button
+        data-em-sort='true'
+        data-em-sort-parent-sortable-selector='.item'
+        data-em-sort-sortable-selector='.name'>Sort Asc
+</button>
+<button
+        data-em-sort='true'
+        data-em-sort-parent-sortable-selector='.item'
+        data-em-sort-sortable-selector='.name'
+        data-em-sort-sortable-order="DESC">Sort Desc
+</button>
+<ul>
+    <li class="item">
+        <span class="name">3</span>
+    </li>
+    <li class="item">
+        <span class="name">1</span>
+    </li>
+    <li class="item">
+        <span class="name">2</span>
+    </li>
+</ul>
+
+<table>
+    <thead>
+    <tr>
+        <th>Number
+            <button
+                    data-em-sort='true'
+                    data-em-sort-parent-sortable-selector='.raw'
+                    data-em-sort-sortable-selector='.id'>Asc
+            </button>
+            <button
+                    data-em-sort='true'
+                    data-em-sort-parent-sortable-selector='.raw'
+                    data-em-sort-sortable-selector='.id'
+                    data-em-sort-sortable-order="DESC">Desc
+            </button>
+        </th>
+        <th>First Name
+            <button
+                    data-em-sort='true'
+                    data-em-sort-parent-sortable-selector='.raw'
+                    data-em-sort-sortable-selector='.firstName'>Asc
+            </button>
+            <button
+                    data-em-sort='true'
+                    data-em-sort-parent-sortable-selector='.raw'
+                    data-em-sort-sortable-selector='.firstName'
+                    data-em-sort-sortable-order="DESC">Desc
+            </button>
+        </th>
+        <th>Last Name
+            <button
+                    data-em-sort='true'
+                    data-em-sort-parent-sortable-selector='.raw'
+                    data-em-sort-sortable-selector='.lastName'>Asc
+            </button>
+            <button
+                    data-em-sort='true'
+                    data-em-sort-parent-sortable-selector='.raw'
+                    data-em-sort-sortable-selector='.lastName'
+                    data-em-sort-sortable-order="DESC">Desc
+            </button>
+        </th>
+        <th>Marks
+            <button
+                    data-em-sort='true'
+                    data-em-sort-parent-sortable-selector='.raw'
+                    data-em-sort-sortable-selector='.mark'>Asc
+            </button>
+            <button
+                    data-em-sort='true'
+                    data-em-sort-parent-sortable-selector='.raw'
+                    data-em-sort-sortable-selector='.mark'
+                    data-em-sort-sortable-order="DESC">Desc
+            </button>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="raw">
+        <td class="id">1</td>
+        <td class="firstName">Andrei</td>
+        <td class="lastName">Charlot</td>
+        <td class="mark">15</td>
+    </tr>
+    <tr class="raw">
+        <td class="id">2</td>
+        <td class="firstName">Gidie</td>
+        <td class="lastName">Bernard</td>
+        <td class="mark">14</td>
+    </tr>
+    <tr class="raw">
+        <td class="id">3</td>
+        <td class="firstName">Clarence</td>
+        <td class="lastName">Colton</td>
+        <td class="mark">18</td>
+    </tr>
+    <tr class="raw">
+        <td class="id">4</td>
+        <td class="firstName">Ambrose</td>
+        <td class="lastName">Gerry</td>
+        <td class="mark">20</td>
+    </tr>
+    </tbody>
+</table>
+
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="emeraude-sort.js"></script>
+</body>
+</html>
+
+
+
+
+
+
